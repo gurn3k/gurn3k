@@ -44,7 +44,7 @@ Each product I build starts the same way: a real user, a specific pain, and one 
 
 ## 📈 How I got here
 
-I've always learned by doing the next hard thing. I started by founding my own **implementation consultancy** and shipping 100+ SaaS, CRM, and eCommerce projects for small businesses. From there I led a Salesforce rollout at a **national telecom**. At a **multi-campus college**, I built a PMO from scratch across nine campuses and made the call on its overnight shift to digital when COVID hit. I brought generative AI into a **federal government department** under strict security rules. Today, at an **IT services firm**, I direct AI modernization programs for enterprise clients.
+I've always learned by doing the next hard thing. I started by founding my own **implementation consultancy** and shipping 100+ SaaS, CRM, and eCommerce projects for small businesses. From there I led a CRM rollout at a **national telecom**. At a **multi-campus college**, I built a PMO from scratch across nine campuses and made the call on its overnight shift to digital when COVID hit. I brought generative AI into a **federal government department** under strict security rules. Today, at an **IT services firm**, I direct AI modernization programs for enterprise clients.
 
 Each step went deeper into technology and closer to the product. Building my own AI products is the natural next one.
 
