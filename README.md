@@ -1,6 +1,6 @@
 # Hi, I'm Gurnek 👋
 
-**Program & Product leader in Toronto, now building AI products hands-on.**
+**Program & Product Leader in Toronto, building AI products hands-on.**
 
 15+ years turning vague, high-stakes mandates into things that ship. Now I'm building AI products of my own.
 
