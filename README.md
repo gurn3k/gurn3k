@@ -36,6 +36,19 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
 
+### [Delivery Bottleneck Analyzer](https://github.com/gurn3k/delivery-bottleneck-analyzer) · [Live report ↗](https://delivery-bottleneck-analyzer-site.vercel.app)
+
+**Where Kubernetes pull requests wait, and whose move it is.** Kubernetes already publishes velocity charts. This answers the narrower question a program lead actually asks: right now, which team-and-stage queue holds the most waiting work, and is each open PR waiting on a reviewer, an approver, or its own author?
+
+The rule I built it around: **every number opens the pull requests behind it.** The report has 170 clickable numbers, and the unit of analysis is always a team and a stage, never a person.
+
+- **Snapshot of 2026-10-04:** 1,027 merged and 1,270 open PRs. The median PR waits 4.1 days for review, then merges in 1.7 hours once approved. The bottleneck is review, not the merge queue
+- **Finding:** 272 open PRs (21% of the backlog) have never had a human response, at a median wait of 41 days. Waiting on the author is about as common as waiting on a reviewer: 337 PRs against 368
+- **Cross-checked against Kubernetes' own DevStats:** the pattern is the same, the medians are within 16 to 28%, and the gap is explained
+- **An AI brief that can't make things up:** a small model writes the risks summary, and code rejects any bullet that cites a PR not in its input or a number not in the computed data. If no bullet passes, the report ships without a brief. Each call is capped at US$0.05
+- **Same process as Redline:** a PRD, 10 decision records, 8 tickets, and 48 automated tests
+- **Stack:** Node.js · GitHub API · OpenRouter · Vercel
+
 ### 🚧 More on the way
 
 Each product I build starts the same way: a real user, a specific pain, and one guarantee the product has to keep. Watch this space.
@@ -56,7 +69,7 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 **How I build:** I define the product (research, PRD, decision records, tickets, evaluation criteria) and direct AI coding agents in Claude Code to write the code.
 
-**Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev
+**Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API
 
 **Certified in:** PMP · PMI-ACP · Professional Scrum Master I · Google Data Analytics · Google Business Intelligence
 
