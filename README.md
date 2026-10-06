@@ -21,7 +21,7 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 
 - **Checks** personal guarantees, indemnification, auto-renewal, and unilateral termination in depth, plus generic detection for arbitration waivers and liability caps
 - **Returns an explicit "Clear" result** that names what it checked, instead of an empty list
-- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 50 automated tests
+- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 58 automated tests
 - **Stack:** Next.js · TypeScript · Supabase · OpenRouter · Vercel
 
 ### [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
