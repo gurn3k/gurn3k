@@ -13,7 +13,7 @@
 
 ## 🔨 What I'm building
 
-### [Redline](https://github.com/gurn3k/redline-review) · [Live demo ↗](https://redline-review-nine.vercel.app)
+### [Redline](https://github.com/gurn3k/redline-review) · [Live demo ↗](https://redline-review-nine.vercel.app) · [Sample analysis ↗](https://redline-review-nine.vercel.app/sample)
 
 **Read it before you sign it.** Redline reviews a contract someone hands a small business owner *before* they sign. It gives a plain-English summary, severity-ranked risk flags, a drafted counter-offer for each flagged clause, and a Q&A box that answers only from the uploaded document.
 
@@ -21,7 +21,8 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 
 - **Checks** personal guarantees, indemnification, auto-renewal, and unilateral termination in depth, plus generic detection for arbitration waivers and liability caps
 - **Returns an explicit "Clear" result** that names what it checked, instead of an empty list
-- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 58 automated tests
+- **See it without signing up:** a public sample shows a real, unedited review of a refrigeration service contract, with every flag tied to its highlighted sentence
+- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 69 automated tests
 - **Stack:** Next.js · TypeScript · Supabase · OpenRouter · Vercel
 
 ### [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
