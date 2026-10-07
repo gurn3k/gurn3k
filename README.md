@@ -68,7 +68,7 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 ## 🧰 Toolkit
 
-**How I build:** I define the product (research, PRD, decision records, tickets, evaluation criteria) and direct AI coding agents in Claude Code to write the code.
+**How I build:** I define the product (research, PRD, decision records, tickets, evaluation criteria) and direct AI coding agents to write the code.
 
 **Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API
 
