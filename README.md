@@ -47,7 +47,7 @@ The rule I built it around: **every number opens the pull requests behind it.** 
 - **Finding:** 272 open PRs (21% of the backlog) have never had a human response, at a median wait of 41 days. Waiting on the author is about as common as waiting on a reviewer: 337 PRs against 368
 - **Cross-checked against Kubernetes' own DevStats:** the pattern is the same, the medians are within 16 to 28%, and the gap is explained
 - **An AI brief that can't make things up:** a small model writes the risks summary, and code rejects any bullet that cites a PR not in its input or a number not in the computed data. If no bullet passes, the report ships without a brief. Each call is capped at US$0.05
-- **Same process as Redline:** a PRD, 10 decision records, 8 tickets, and 48 automated tests
+- **Built from a spec, with 67 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
 - **Stack:** Node.js · GitHub API · OpenRouter · Vercel
 
 ### 🚧 More on the way
