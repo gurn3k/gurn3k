@@ -37,7 +37,7 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
 
-### [Delivery Bottleneck Analyzer](https://github.com/gurn3k/delivery-bottleneck-analyzer) · [Live report ↗](https://delivery-bottleneck-analyzer-site.vercel.app)
+### [Whose Move](https://github.com/gurn3k/delivery-bottleneck-analyzer) · [Live report ↗](https://delivery-bottleneck-analyzer-site.vercel.app)
 
 **Where Kubernetes pull requests wait, and whose move it is.** Kubernetes already publishes velocity charts. This answers the narrower question a program lead actually asks: right now, which team-and-stage queue holds the most waiting work, and is each open PR waiting on a reviewer, an approver, or its own author?
 
