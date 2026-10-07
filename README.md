@@ -4,6 +4,7 @@
 
 15+ years running programs where being wrong is expensive. The rule I work by: decide what the outcome has to guarantee before deciding how to build it. The stack, the sequencing, and what gets automated all follow from that.
 
+[![Website](https://img.shields.io/badge/Website-gurn3k.com-0E3B33?style=flat)](https://www.gurn3k.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-gurnek--khaira-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/gurnek-khaira)
 ![Toronto](https://img.shields.io/badge/Based_in-Toronto,_ON-555?style=flat)
 ![PMP](https://img.shields.io/badge/PMP-certified-2E7D32?style=flat)
@@ -80,4 +81,4 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 I'm open to **Program or Product Management roles** in organizations building AI at scale. Remote or hybrid in the GTA.
 
-If you're building something like that, or want to talk about Redline or the Job Radar, [find me on LinkedIn](https://linkedin.com/in/gurnek-khaira).
+If you're building something like that, or want to talk about Redline or the Job Radar, see [gurn3k.com](https://www.gurn3k.com) or [find me on LinkedIn](https://linkedin.com/in/gurnek-khaira).
