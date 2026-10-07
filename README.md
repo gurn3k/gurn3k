@@ -78,6 +78,6 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 ## 🤝 Let's connect
 
-I'm open to **Senior Program Manager, Program Director, and Program/Product hybrid roles** at companies that put AI into their own products at real scale. Remote or hybrid in the GTA.
+I'm open to **Program or Product Management roles** in organizations building AI at scale. Remote or hybrid in the GTA.
 
 If you're building something like that, or want to talk about Redline or the Job Radar, [find me on LinkedIn](https://linkedin.com/in/gurnek-khaira).
