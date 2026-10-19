@@ -14,7 +14,7 @@
 
 ## 🔨 What I'm building
 
-### [Redline](https://github.com/gurn3k/redline-review) · [Live demo ↗](https://redline-review-nine.vercel.app) · [Sample analysis ↗](https://redline-review-nine.vercel.app/sample)
+### <img src="assets/icons/redline.svg" width="22" height="22" align="absmiddle" alt=""> [Redline](https://github.com/gurn3k/redline-review) · [Live demo ↗](https://redline-review-nine.vercel.app) · [Sample analysis ↗](https://redline-review-nine.vercel.app/sample)
 
 **Read it before you sign it.** Redline reviews a contract someone hands a small business owner *before* they sign. It gives a plain-English summary, severity-ranked risk flags, a drafted counter-offer for each flagged clause, and a Q&A box that answers only from the uploaded document.
 
@@ -26,7 +26,7 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 - **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 69 automated tests
 - **Stack:** Next.js · TypeScript · Supabase · OpenRouter · Vercel
 
-### [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
+### <img src="assets/icons/job-radar.svg" width="22" height="22" align="absmiddle" alt=""> [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
 
 **Every PM, program and TPM opening at 36 AI companies, sorted in 15 seconds for 11 cents.** Job boards can't tell me what I actually need to know: is the product itself AI, does the role require hands-on ML, is it a program or product role, and can I do it from Toronto. The radar answers those for every open role.
 
@@ -38,7 +38,7 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
 
-### [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) · [Live report ↗](https://whosemoveisit.gurn3k.com)
+### <img src="assets/icons/whose-move.svg" width="22" height="22" align="absmiddle" alt=""> [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) · [Live report ↗](https://whosemoveisit.gurn3k.com)
 
 **Where Kubernetes pull requests wait.** Kubernetes already publishes velocity charts. This answers the narrower question a program lead actually asks: right now, which team-and-stage queue holds the most waiting work, and is each open PR waiting on a reviewer, an approver, or its own author?
 
@@ -51,7 +51,7 @@ The rule I built it around: **every number opens the pull requests behind it.** 
 - **Built from a spec, with 67 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
 - **Stack:** Node.js · GitHub API · OpenRouter · Vercel
 
-### [Cap Drafter](https://github.com/gurn3k/auction-draft-tool-kit) · [Live app ↗](https://fan-basketball-drafter.vercel.app)
+### <img src="assets/icons/cap-drafter.svg" width="22" height="22" align="absmiddle" alt=""> [Cap Drafter](https://github.com/gurn3k/auction-draft-tool-kit) · [Live app ↗](https://fan-basketball-drafter.vercel.app)
 
 **Live auction prices for fantasy basketball salary cap drafts.** Basketball is a passion of mine, and this is the tool I wanted for my own drafts. Yahoo's draft room shows a fixed price for each player. That price ignores your league's budget and everything that has already sold. Cap Drafter prices every player for your league and re-prices the board after every sale, under a 30-second bid clock.
 
