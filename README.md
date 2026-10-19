@@ -51,6 +51,18 @@ The rule I built it around: **every number opens the pull requests behind it.** 
 - **Built from a spec, with 67 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
 - **Stack:** Node.js · GitHub API · OpenRouter · Vercel
 
+### [Cap Drafter](https://github.com/gurn3k/auction-draft-tool-kit) · [Live app ↗](https://fan-basketball-drafter.vercel.app)
+
+**Live auction prices for fantasy basketball salary cap drafts.** Basketball is a passion of mine, and this is the tool I wanted for my own drafts. Yahoo's draft room shows a fixed price for each player. That price ignores your league's budget and everything that has already sold. Cap Drafter prices every player for your league and re-prices the board after every sale, under a 30-second bid clock.
+
+The rule I built it around: **every price has to add up to exactly the money left in the room.** With Yahoo defaults, 156 players are priced at exactly $2,400. After each sale, the live prices share out exactly what's left. Tests check both.
+
+- **Bid to, not just value:** the live price, tilted up to ±20% toward the categories my roster is losing, and capped at what I can actually bid
+- **Dropped my own data source before launch:** Basketball-Reference's terms rule out tools built on scraped data. I compared five alternatives, moved to a licensed API, and checked that all 582 players' stats matched exactly
+- **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. Sync waits on a branch until approval comes through
+- **Used in a live draft run**, with 7 decision records and 46 automated tests
+- **Stack:** vanilla JavaScript · balldontlie API · Vercel. No framework, no build step
+
 ### 🚧 More on the way
 
 Each product I build starts the same way: a real user, a specific pain, and one guarantee the product has to keep. Watch this space.
