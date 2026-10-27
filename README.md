@@ -23,7 +23,7 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 - **Checks** personal guarantees, indemnification, auto-renewal, and unilateral termination in depth, plus generic detection for arbitration waivers and liability caps
 - **Returns an explicit "Clear" result** that names what it checked, instead of an empty list
 - **See it without signing up:** a public sample shows a real, unedited review of a refrigeration service contract, with every flag tied to its highlighted sentence
-- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 69 automated tests
+- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 81 automated tests
 - **Stack:** Next.js · TypeScript · Supabase · OpenRouter · Vercel
 
 ### <img src="assets/icons/job-radar.svg" width="22" height="22" align="absmiddle" alt=""> [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
@@ -34,7 +34,7 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 
 - **First full run:** 8,381 open roles scanned, 1,018 product and program roles labeled by [Jev](https://docs.typesafe.ai) in 15 seconds for $0.107, with 0 errors
 - **Finding:** only 9 of 198 AI PM roles list hands-on ML experience as a must-have. Most AI product roles want judgment about AI, not a model-building background
-- **Runs itself:** the live page refreshes every Monday with no manual steps, capped at $0.30 per run, and refuses to publish if more than 5% of labels fail or the role count halves
+- **Runs itself:** the live page refreshes every week with no manual steps, capped at $0.30 per run, and refuses to publish if more than 5% of labels fail or the role count halves
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
 
@@ -48,7 +48,7 @@ The rule I built it around: **every number opens the pull requests behind it.** 
 - **Finding:** 272 open PRs (21% of the backlog) have never had a human response, at a median wait of 41 days. Waiting on the author is about as common as waiting on a reviewer: 337 PRs against 368
 - **Cross-checked against Kubernetes' own DevStats:** the pattern is the same, the medians are within 16 to 28%, and the gap is explained
 - **An AI brief that can't make things up:** a small model writes the risks summary, and code rejects any bullet that cites a PR not in its input or a number not in the computed data. If no bullet passes, the report ships without a brief. Each call is capped at US$0.05
-- **Built from a spec, with 67 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
+- **Built from a spec, with 73 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
 - **Stack:** Node.js · GitHub API · OpenRouter · Vercel
 
 ### <img src="assets/icons/cap-drafter.svg" width="22" height="22" align="absmiddle" alt=""> [Cap Drafter](https://github.com/gurn3k/auction-draft-tool-kit) · [Live app ↗](https://fan-basketball-drafter.vercel.app)
@@ -59,8 +59,8 @@ The rule I built it around: **every price has to add up to exactly the money lef
 
 - **Bid to, not just value:** the live price, tilted up to ±20% toward the categories my roster is losing, and capped at what I can actually bid
 - **Dropped my own data source before launch:** Basketball-Reference's terms rule out tools built on scraped data. I compared five alternatives, moved to a licensed API, and checked that all 582 players' stats matched exactly
-- **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. Sync waits on a branch until approval comes through
-- **Used in a live draft run**, with 7 decision records and 46 automated tests
+- **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. I've applied, and sync waits on a branch until approval comes through. A Chrome extension follows
+- **Used in a live draft run**, with 7 decision records and 54 automated tests
 - **Stack:** vanilla JavaScript · balldontlie API · Vercel. No framework, no build step
 
 ### 🚧 More on the way
@@ -83,7 +83,7 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 **How I build:** every product starts with research, a PRD, decision records, tickets and evaluation criteria, and ships with real numbers from real runs.
 
-**Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API
+**Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API · vanilla JavaScript · balldontlie API
 
 **Certified in:** PMP · PMI-ACP · Professional Scrum Master I · Google Data Analytics · Google Business Intelligence
 
@@ -91,6 +91,6 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 ## 🤝 Let's connect
 
-I'm open to **Program or Product Management roles** in organizations building AI at scale. Remote or hybrid in the GTA.
+I'm open to **Program, Technical Program or Product Management roles** in organizations building AI at scale. Remote or hybrid in the GTA.
 
 If you're building something like that, or want to talk about Redline or the Job Radar, see [gurn3k.com](https://www.gurn3k.com) or [find me on LinkedIn](https://linkedin.com/in/gurnek-khaira).
