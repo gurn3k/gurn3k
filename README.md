@@ -23,7 +23,7 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 - **Checks** personal guarantees, indemnification, auto-renewal, and unilateral termination in depth, plus generic detection for arbitration waivers and liability caps
 - **Returns an explicit "Clear" result** that names what it checked, instead of an empty list
 - **See it without signing up:** a public sample shows a real, unedited review of a refrigeration service contract, with every flag tied to its highlighted sentence
-- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 12 architecture decision records, 12 scoped tickets, and 97 automated tests
+- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 12 architecture decision records, 13 scoped tickets, and 97 automated tests
 - **Redesigned for the people who visit:** every page was reworked after a before-and-after review of three visual directions, and readers can sign in with Google or LinkedIn
 - **Measured against planted answers:** I ran the real pipeline over a 9-document set with 30 in-scope planted clauses. It found 18 of 30 (60%), 18 of 19 flags shown matched a planted clause, every flag shown quoted its document word for word, and all 3 clean documents came back Clear. A model wrote the set, so I treat these as an upper bound and not a promise to users
 - **Used the eval to fix the weakest category:** late fees and fee escalators were found 1 of 9 times. After widening one paragraph of the prompt, two further runs found 8 of 9 and 7 of 9, and overall recall rose from 18 to 25 and 24 of 30
@@ -36,7 +36,7 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 The rule I built it around: **code computes facts, the model judges meaning.** The first version asked the model for location, and it labeled Vancouver roles as US-only. A location string is a fact, so it moved into code.
 
 - **First full run:** 8,381 open roles scanned, 1,018 product and program roles labeled by [Jev](https://docs.typesafe.ai) in 15 seconds for $0.107, with 0 errors
-- **Finding:** only 9 of 198 AI PM roles list hands-on ML experience as a must-have. Most AI product roles want judgment about AI, not a model-building background
+- **Finding from the first run:** only 9 of 198 AI PM roles list hands-on ML experience as a must-have. Most AI product roles want judgment about AI, not a model-building background
 - **Runs itself:** the live page refreshes every week with no manual steps, capped at $0.30 per run, and refuses to publish if more than 5% of labels fail or the role count halves. A same-day backup run covers a missed refresh, and a freshness check flags the page if its data is more than 8 days old
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
@@ -63,7 +63,7 @@ The rule I built it around: **every price has to add up to exactly the money lef
 - **Bid to, not just value:** the live price, tilted up to ±20% toward the categories my roster is losing, and capped at what I can actually bid
 - **Dropped my own data source before launch:** Basketball-Reference's terms rule out tools built on scraped data. I compared five alternatives, moved to a licensed API, and checked that all 582 players' stats matched exactly
 - **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. I've applied, and sync waits on a branch until approval comes through. A Chrome extension follows
-- **Used in a live draft run**, with 7 decision records and 54 automated tests
+- **Used in a live draft run**, with 11 decision records and 54 automated tests
 - **Stack:** vanilla JavaScript · balldontlie API · Vercel. No framework, no build step
 
 ### 🚧 More on the way
