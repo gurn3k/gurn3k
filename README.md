@@ -23,7 +23,8 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 - **Checks** personal guarantees, indemnification, auto-renewal, and unilateral termination in depth, plus generic detection for arbitration waivers and liability caps
 - **Returns an explicit "Clear" result** that names what it checked, instead of an empty list
 - **See it without signing up:** a public sample shows a real, unedited review of a refrigeration service contract, with every flag tied to its highlighted sentence
-- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 10 architecture decision records, 12 scoped tickets, and 81 automated tests
+- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 12 architecture decision records, 12 scoped tickets, and 81 automated tests
+- **Redesigned for the people who visit:** every page was reworked after a before-and-after review of three visual directions, and readers can sign in with Google or LinkedIn
 - **Stack:** Next.js · TypeScript · Supabase · OpenRouter · Vercel
 
 ### <img src="assets/icons/job-radar.svg" width="22" height="22" align="absmiddle" alt=""> [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
@@ -34,7 +35,7 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 
 - **First full run:** 8,381 open roles scanned, 1,018 product and program roles labeled by [Jev](https://docs.typesafe.ai) in 15 seconds for $0.107, with 0 errors
 - **Finding:** only 9 of 198 AI PM roles list hands-on ML experience as a must-have. Most AI product roles want judgment about AI, not a model-building background
-- **Runs itself:** the live page refreshes every week with no manual steps, capped at $0.30 per run, and refuses to publish if more than 5% of labels fail or the role count halves
+- **Runs itself:** the live page refreshes every week with no manual steps, capped at $0.30 per run, and refuses to publish if more than 5% of labels fail or the role count halves. A same-day backup run covers a missed refresh, and a freshness check flags the page if its data is more than 8 days old
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
 
@@ -82,6 +83,8 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 ## 🧰 Toolkit
 
 **How I build:** every product starts with research, a PRD, decision records, tickets and evaluation criteria, and ships with real numbers from real runs.
+
+**How I measure:** fixtures with planted answers, hand-labelled samples scored against the model's answers, and results reported as they came out.
 
 **Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API · vanilla JavaScript · balldontlie API
 
