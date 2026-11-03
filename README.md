@@ -12,6 +12,16 @@
 
 ---
 
+## 🧭 Start here
+
+Two minutes, three links:
+
+- **Shipping LLM features people can trust.** [Redline](https://github.com/gurn3k/redline-review) drops any flag it can't tie to an exact sentence in the document. Its [eval](https://github.com/gurn3k/redline-review/blob/main/eval/REPORT.md) scores recall, precision and groundedness against planted answers and states its limits, and a [live adversarial test](https://github.com/gurn3k/redline-review/blob/main/docs/FINDINGS.md) included a prompt-injection attempt that didn't change the flags.
+- **Measuring a model before trusting it.** For [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) I [hand-labelled 40 postings](https://github.com/gurn3k/ai-pm-job-radar/blob/main/eval/RESULTS.md) and scored the model against them. Code computes facts, the model judges meaning, and answers it isn't sure of go to a review pile.
+- **Program management on real engineering data.** [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) shows where 2,297 Kubernetes pull requests wait, by team and stage, and is [cross-checked](https://github.com/gurn3k/delivery-bottleneck-analyzer/blob/main/docs/research/devstats-cross-check.md) against Kubernetes' own DevStats.
+
+---
+
 ## 🔨 What I'm building
 
 ### <img src="assets/icons/redline.svg" width="22" height="22" align="absmiddle" alt=""> [Redline](https://github.com/gurn3k/redline-review) · [Live demo ↗](https://redline-review-nine.vercel.app) · [Sample analysis ↗](https://redline-review-nine.vercel.app/sample)
