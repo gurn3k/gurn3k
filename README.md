@@ -23,8 +23,10 @@ The rule I built it around: **if Redline can't point to the exact sentence, it d
 - **Checks** personal guarantees, indemnification, auto-renewal, and unilateral termination in depth, plus generic detection for arbitration waivers and liability caps
 - **Returns an explicit "Clear" result** that names what it checked, instead of an empty list
 - **See it without signing up:** a public sample shows a real, unedited review of a refrigeration service contract, with every flag tied to its highlighted sentence
-- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 12 architecture decision records, 12 scoped tickets, and 81 automated tests
+- **Built like a product, not a weekend hack:** a four-part market research pass, a PRD, 12 architecture decision records, 12 scoped tickets, and 97 automated tests
 - **Redesigned for the people who visit:** every page was reworked after a before-and-after review of three visual directions, and readers can sign in with Google or LinkedIn
+- **Measured against planted answers:** I ran the real pipeline over a 9-document set with 30 in-scope planted clauses. It found 18 of 30 (60%), 18 of 19 flags shown matched a planted clause, every flag shown quoted its document word for word, and all 3 clean documents came back Clear. A model wrote the set, so I treat these as an upper bound and not a promise to users
+- **Used the eval to fix the weakest category:** late fees and fee escalators were found 1 of 9 times. After widening one paragraph of the prompt, two further runs found 8 of 9 and 7 of 9, and overall recall rose from 18 to 25 and 24 of 30
 - **Stack:** Next.js · TypeScript · Supabase · OpenRouter · Vercel
 
 ### <img src="assets/icons/job-radar.svg" width="22" height="22" align="absmiddle" alt=""> [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) · [Live radar ↗](https://ai-pm-job-radar.vercel.app)
@@ -84,7 +86,7 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 **How I build:** every product starts with research, a PRD, decision records, tickets and evaluation criteria, and ships with real numbers from real runs.
 
-**How I measure:** fixtures with planted answers, hand-labelled samples scored against the model's answers, and results reported as they came out.
+**How I measure:** gold sets with planted answers, precision, recall and groundedness scores, hand-labelled samples, and a model judge checked against my own labels. Results are reported as they came out.
 
 **Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API · vanilla JavaScript · balldontlie API
 
