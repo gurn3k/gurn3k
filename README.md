@@ -64,7 +64,7 @@ The rule I built it around: **every number opens the pull requests behind it.** 
 - **Built from a spec, with 73 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
 - **Stack:** Node.js · GitHub API · OpenRouter · Vercel
 
-### <img src="assets/icons/cap-drafter.svg" width="22" height="22" align="absmiddle" alt=""> [Cap Drafter](https://github.com/gurn3k/auction-draft-tool-kit) · [Live app ↗](https://fan-basketball-drafter.vercel.app)
+### <img src="assets/icons/cap-drafter.svg" width="22" height="22" align="absmiddle" alt=""> [Cap Drafter](https://github.com/gurn3k/auction-draft-tool-kit) · [Live app ↗](https://fan-basketball-drafter.vercel.app) · [88-second demo ↗](https://www.gurn3k.com/work/cap-drafter)
 
 **Live auction prices for fantasy basketball salary cap drafts.** Basketball is a passion of mine, and this is the tool I wanted for my own drafts. Yahoo's draft room shows a fixed price for each player. That price ignores your league's budget and everything that has already sold. Cap Drafter prices every player for your league and re-prices the board after every sale, under a 30-second bid clock.
 
@@ -72,8 +72,9 @@ The rule I built it around: **every price has to add up to exactly the money lef
 
 - **Bid to, not just value:** the live price, tilted up to ±20% toward the categories my roster is losing, and capped at what I can actually bid
 - **Dropped my own data source before launch:** Basketball-Reference's terms rule out tools built on scraped data. I compared five alternatives, moved to a licensed API, and checked that all 582 players' stats matched exactly
-- **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. I've applied, and sync waits on a branch until approval comes through. A Chrome extension follows
-- **Used in a live draft run**, with 11 decision records and 90 automated tests
+- **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. I've applied, and sync waits on a branch until approval comes through. A read-only Chrome side panel is next, one that never reads Yahoo's pages. I've emailed Yahoo about its use, and it waits on the same approval
+- **Used in a live draft run**, with 12 decision records and 90 automated tests
+- **Reviewed before it went further:** a review pass found 18 problems, such as prices that stopped adding up in some leagues. All 18 are fixed with tests, and [the findings](https://github.com/gurn3k/auction-draft-tool-kit/blob/main/docs/FINDINGS.md) list what's still open
 - **Stack:** vanilla JavaScript · balldontlie API · Vercel. No framework, no build step
 
 ### 🚧 More on the way
