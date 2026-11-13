@@ -73,7 +73,7 @@ The rule I built it around: **every price has to add up to exactly the money lef
 - **Bid to, not just value:** the live price, tilted up to ±20% toward the categories my roster is losing, and capped at what I can actually bid
 - **Dropped my own data source before launch:** Basketball-Reference's terms rule out tools built on scraped data. I compared five alternatives, moved to a licensed API, and checked that all 582 players' stats matched exactly
 - **Parked a finished feature rather than shipping one that couldn't work:** Yahoo sign-in and live draft sync were built, then Yahoo started requiring approval for its Fantasy API. I've applied, and sync waits on a branch until approval comes through. A Chrome extension follows
-- **Used in a live draft run**, with 11 decision records and 54 automated tests
+- **Used in a live draft run**, with 11 decision records and 90 automated tests
 - **Stack:** vanilla JavaScript · balldontlie API · Vercel. No framework, no build step
 
 ### 🚧 More on the way
