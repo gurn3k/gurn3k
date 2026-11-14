@@ -84,11 +84,11 @@ The rule I built it around: **every price has to add up to exactly the money lef
 The rule I built it around: **every figure in the report comes from the run files.** The page won't build if a number is typed by hand, and a test checks each one against the data.
 
 - **Clear criteria held up:** Claude Sonnet 5.5 caught 189 of 196 planted failures and agreed with the answer key on 95% of verdicts (kappa 0.86)
-- **Vague criteria hid their damage:** the catch rate stayed at 193 of 196 while agreement fell to 65%, because the judge also failed 297 verdicts that should have passed. Catch rate alone would have called the vague criteria better
+- **Vague criteria hid their damage:** the catch rate stayed at 193 of 196 while agreement fell to 65%, because the judge also failed 297 verdicts that should have passed. Catch rate alone would have called the vague criteria better, and a stronger judge didn't fix it: Opus 5.5 reached kappa 0.48 against Sonnet's 0.46
 - **Trust takes more labels than you'd think:** 40 labels couldn't settle a single criterion. It took 160 to settle three of the four
 - **The priciest model isn't automatically the right judge:** Opus 5.5 agreed slightly more, at 2.3 times Sonnet's cost. Haiku 5.5 was by far the cheapest but obeyed an instruction hidden in a reply
 - **Built to scale from the first version:** 85% of input tokens came from the prompt cache, 1 of 1,760 calls needed a retry, and spending caps and resume were there from the start. The report also says what would give way first
-- **Checked against my own labels:** 30 replies labelled blind agreed with the answer key on 116 of 120 labels. $4.87 spent judging, and 118 automated tests
+- **Checked against my own labels:** 30 replies labelled blind agreed with the answer key on 116 of 120 labels. $6.26 spent judging, and 129 automated tests
 - **Stack:** vanilla JavaScript · Node.js · Anthropic API. No dependencies
 
 ### 🚧 More on the way
