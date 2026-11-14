@@ -77,6 +77,20 @@ The rule I built it around: **every price has to add up to exactly the money lef
 - **Reviewed before it went further:** a review pass found 18 problems, such as prices that stopped adding up in some leagues. All 18 are fixed with tests, and [the findings](https://github.com/gurn3k/auction-draft-tool-kit/blob/main/docs/FINDINGS.md) list what's still open
 - **Stack:** vanilla JavaScript · balldontlie API · Vercel. No framework, no build step
 
+### <img src="assets/icons/judging-the-judge.svg" width="22" height="22" align="absmiddle" alt=""> [Judging the Judge](https://github.com/gurn3k/llm-output-quality-scoring-guide) · [Findings report ↗](https://www.gurn3k.com/judging-the-judge/)
+
+**Can you trust an AI model to grade other AI output?** Teams shipping AI features increasingly let one model judge another's replies, and most never check that judge against a person. I measured one on 216 customer support replies with planted failures, against an answer key and my own blind labels.
+
+The rule I built it around: **every figure in the report comes from the run files.** The page won't build if a number is typed by hand, and a test checks each one against the data.
+
+- **Clear criteria held up:** Claude Sonnet 5.5 caught 189 of 196 planted failures and agreed with the answer key on 95% of verdicts (kappa 0.86)
+- **Vague criteria hid their damage:** the catch rate stayed at 193 of 196 while agreement fell to 65%, because the judge also failed 297 verdicts that should have passed. Catch rate alone would have called the vague criteria better
+- **Trust takes more labels than you'd think:** 40 labels couldn't settle a single criterion. It took 160 to settle three of the four
+- **The priciest model isn't automatically the right judge:** Opus 5.5 agreed slightly more, at 2.3 times Sonnet's cost. Haiku 5.5 was by far the cheapest but obeyed an instruction hidden in a reply
+- **Built to scale from the first version:** 85% of input tokens came from the prompt cache, 1 of 1,760 calls needed a retry, and spending caps and resume were there from the start. The report also says what would give way first
+- **Checked against my own labels:** 30 replies labelled blind agreed with the answer key on 116 of 120 labels. $4.87 spent judging, and 118 automated tests
+- **Stack:** vanilla JavaScript · Node.js · Anthropic API. No dependencies
+
 ### 🚧 More on the way
 
 Each product I build starts the same way: a real user, a specific pain, and one guarantee the product has to keep. Watch this space.
@@ -99,7 +113,7 @@ Full history on [LinkedIn](https://linkedin.com/in/gurnek-khaira).
 
 **How I measure:** gold sets with planted answers, precision, recall and groundedness scores, hand-labelled samples, and a model judge checked against my own labels. Results are reported as they came out.
 
-**Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API · vanilla JavaScript · balldontlie API
+**Products built on:** Next.js · TypeScript · Supabase · Vercel · OpenRouter · Python · Jev · Node.js · GitHub API · vanilla JavaScript · balldontlie API · Anthropic API
 
 **Certified in:** PMP · PMI-ACP · Professional Scrum Master I · Google Data Analytics · Google Business Intelligence
 
