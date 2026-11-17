@@ -91,6 +91,19 @@ The rule I built it around: **every figure in the report comes from the run file
 - **Checked against my own labels:** 30 replies labelled blind agreed with the answer key on 116 of 120 labels. $6.26 spent judging, and 129 automated tests
 - **Stack:** vanilla JavaScript · Node.js · Anthropic API. No dependencies
 
+### <img src="assets/icons/understudy.svg" width="22" height="22" align="absmiddle" alt=""> Understudy · [Findings report ↗](https://understudy.gurn3k.com)
+
+**Can an AI decide which invoices are safe to pay without a person checking?** Companies keep asking where AI should take over work people do today, and the evidence is usually a demo. I took the most repeated decision in a real company's 2018 purchasing records (227,548 pay-or-check calls made by hand) and tested three AI "understudies" on 54,874 invoices they had never seen, against what really happened.
+
+The rule I built it around: **an AI is trusted only when its worst likely case clears the bar.** Of the invoices it pays without a check, at least 99 in 100 must turn out fine, with enough of them to rule out luck. Every rule was written down before the run it governs.
+
+- **Result:** none of the three earned trust. Claude writing a rulebook that ordinary code runs paid 48.7% of invoices on its own at 99.07% correct, with a worst likely case of 98.95%. It was 14 mistakes short of proof
+- **Claude checking every invoice was more careful, but not proven:** a follow-up on 10,000 new invoices, set up in writing before it ran, found it paid only 5.8% of them and couldn't show 99%. The rulebook costs $0.40 once; checking each invoice costs $2.60 per 1,000, every time
+- **Earning trust one kind of invoice at a time:** a week-by-week replay switched the AI on for one kind of invoice after it proved itself, then switched it off again when it slipped. Results arrive weeks late, so trust comes slowly
+- **The agreement trap:** in a simulation where reviewers copy the AI 9 times in 10, switching it on by agreement made about ten times as many wrong payments. The agreement measured the reviewers, not the AI
+- **Built to be checked:** 18 decision records, 74 automated tests, an independent recount of the 1.6 million-event log, and a check that every pre-registered sentence appears word for word on the page
+- **Stack:** Python (standard library) · vanilla JavaScript · Claude · Vercel. No dependencies
+
 ### 🚧 More on the way
 
 Each product I build starts the same way: a real user, a specific pain, and one guarantee the product has to keep. Watch this space.
