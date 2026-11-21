@@ -93,15 +93,16 @@ The rule I built it around: **every figure in the report comes from the run file
 
 ### <img src="assets/icons/understudy.svg" width="22" height="22" align="absmiddle" alt=""> Understudy · [Findings report ↗](https://understudy.gurn3k.com)
 
-**Can an AI decide which invoices are safe to pay without a person checking?** Companies keep asking where AI should take over work people do today, and the evidence is usually a demo. I took the most repeated decision in a real company's 2018 purchasing records (227,548 pay-or-check calls made by hand) and tested three AI "understudies" on 54,874 invoices they had never seen, against what really happened.
+**Can an AI pass invoices straight to payment, and how would a company prove it first?** Companies keep asking where AI should take over work people do today, and the evidence is usually a demo. On a real company's 2018 purchasing records, I tested three approaches, two of them AI, on held-out invoices: the simple rule and the rulebook on 54,874, and Claude checking each invoice on a 10,000-invoice follow-up. I checked every call against what really happened.
 
-The rule I built it around: **an AI is trusted only when its worst likely case clears the bar.** Of the invoices it pays without a check, at least 99 in 100 must turn out fine, with enough of them to rule out luck. Every rule was written down before the run it governs.
+The rule I built it around: **an AI is trusted only when its worst likely case clears the bar.** Of the invoices it pays without a check, at least 99 in 100 must turn out fine, with enough of them to rule out luck. Every rule was written down before the run it governs, and the 11 changes made after a result was known are listed on the page.
 
-- **Result:** none of the three earned trust. Claude writing a rulebook that ordinary code runs paid 48.7% of invoices on its own at 99.07% correct, with a worst likely case of 98.95%. It was 14 mistakes short of proof
-- **Claude checking every invoice was more careful, but not proven:** a follow-up on 10,000 new invoices, set up in writing before it ran, found it paid only 5.8% of them and couldn't show 99%. The rulebook costs $0.40 once; checking each invoice costs $2.60 per 1,000, every time
-- **Earning trust one kind of invoice at a time:** a week-by-week replay switched the AI on for one kind of invoice after it proved itself, then switched it off again when it slipped. Results arrive weeks late, so trust comes slowly
-- **The agreement trap:** in a simulation where reviewers copy the AI 9 times in 10, switching it on by agreement made about ten times as many wrong payments. The agreement measured the reviewers, not the AI
-- **Built to be checked:** 18 decision records, 74 automated tests, an independent recount of the 1.6 million-event log, and a check that every pre-registered sentence appears word for word on the page
+- **Result: not proven.** Claude writing a rulebook that ordinary code runs paid 48.7% of invoices on its own, and 99.07% of those were fine. Its worst likely case was 98.95%, or 98.82% allowing for invoices on the same order, so it did not prove the bar. A simple rule paid nothing
+- **Claude checking each invoice:** in a follow-up on 10,000 new invoices, set up in writing before it ran, it paid 577 (5.8%) and 6 of those needed a correction, so it could not show 99%. The rulebook costs $0.40 once. Checking each invoice costs $2.60 per 1,000, every time
+- **Earning trust one kind of invoice at a time:** a week-by-week replay switched the AI on for a kind of invoice only once its real outcomes proved the bar. It switched a kind off again when results slipped. It paid 844 lines, 15 of which needed a correction, all in one kind. Outcomes arrive weeks late, so trust comes slowly
+- **The agreement trap:** in a simulation where reviewers copy the AI 9 times in 10, switching it on by agreement let through about ten times as many lines that needed a correction. The agreement measured the reviewers, not the AI
+- **A model pilot, in two documents:** a request for proposals to send to suppliers, and the internal business case with a calculator for the reader's own inputs. The return verdict stays out of the request
+- **Built to be checked:** 30 decision records and 137 unit tests. A second program, written separately, recounted the 1.6 million-event log. A pre-registered check on a later month (September 2018) ran once. Another check confirms that every fixed sentence appears word for word on the page
 - **Stack:** Python (standard library) · vanilla JavaScript · Claude · Vercel. No dependencies
 
 ### 🚧 More on the way
