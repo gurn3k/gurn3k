@@ -18,7 +18,7 @@ Two minutes, three links:
 
 - **Shipping LLM features people can trust.** [Redline](https://github.com/gurn3k/redline-review) drops any flag it can't tie to an exact sentence in the document. Its [eval](https://github.com/gurn3k/redline-review/blob/main/eval/REPORT.md) scores recall, precision and groundedness against planted answers and states its limits, and a [live adversarial test](https://github.com/gurn3k/redline-review/blob/main/docs/FINDINGS.md) included a prompt-injection attempt that didn't change the flags.
 - **Measuring a model before trusting it.** For [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) I [hand-labelled 40 postings](https://github.com/gurn3k/ai-pm-job-radar/blob/main/eval/RESULTS.md) and scored the model against them. Code computes facts, the model judges meaning, and answers it isn't sure of go to a review pile.
-- **Program management on real engineering data.** [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) shows where 2,893 Kubernetes pull requests wait, by team and stage, and is [cross-checked](https://github.com/gurn3k/delivery-bottleneck-analyzer/blob/main/docs/research/devstats-cross-check.md) against Kubernetes' own DevStats.
+- **Program management on real engineering data.** [Whose Move Is It](https://github.com/gurn3k/whose-move-is-it) shows where 2,893 Kubernetes pull requests wait, by team and stage, and is [cross-checked](https://github.com/gurn3k/whose-move-is-it/blob/main/docs/research/devstats-cross-check.md) against Kubernetes' own DevStats.
 
 ---
 
@@ -51,7 +51,7 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 - **Measured against human judgment:** I hand-labeled 40 postings and scored the model against them. On the 18 labeled blind, it correctly sorted 15 into "AI role I'm targeting" or not, and answers it isn't confident in go to a review pile instead of being guessed. The eval also showed that "needs AI experience" covers two different requirements, an ML background and hands-on AI skills, so the radar now screens for each separately
 - **Stack:** Python · Jev (TypeSafe) · Vercel · public Greenhouse, Ashby and Lever job boards
 
-### <img src="assets/icons/whose-move.svg" width="22" height="22" align="absmiddle" alt=""> [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) · [Live report ↗](https://whosemoveisit.gurn3k.com)
+### <img src="assets/icons/whose-move.svg" width="22" height="22" align="absmiddle" alt=""> [Whose Move Is It](https://github.com/gurn3k/whose-move-is-it) · [Live report ↗](https://whosemoveisit.gurn3k.com)
 
 **Where Kubernetes pull requests wait.** Kubernetes already publishes velocity charts. This answers the narrower question a program lead actually asks: right now, which team-and-stage queue holds the most waiting work, and is each open PR waiting on a reviewer, an approver, or its own author?
 
