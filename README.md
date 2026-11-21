@@ -18,7 +18,7 @@ Two minutes, three links:
 
 - **Shipping LLM features people can trust.** [Redline](https://github.com/gurn3k/redline-review) drops any flag it can't tie to an exact sentence in the document. Its [eval](https://github.com/gurn3k/redline-review/blob/main/eval/REPORT.md) scores recall, precision and groundedness against planted answers and states its limits, and a [live adversarial test](https://github.com/gurn3k/redline-review/blob/main/docs/FINDINGS.md) included a prompt-injection attempt that didn't change the flags.
 - **Measuring a model before trusting it.** For [AI PM Job Radar](https://github.com/gurn3k/ai-pm-job-radar) I [hand-labelled 40 postings](https://github.com/gurn3k/ai-pm-job-radar/blob/main/eval/RESULTS.md) and scored the model against them. Code computes facts, the model judges meaning, and answers it isn't sure of go to a review pile.
-- **Program management on real engineering data.** [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) shows where 2,297 Kubernetes pull requests wait, by team and stage, and is [cross-checked](https://github.com/gurn3k/delivery-bottleneck-analyzer/blob/main/docs/research/devstats-cross-check.md) against Kubernetes' own DevStats.
+- **Program management on real engineering data.** [Whose Move Is It](https://github.com/gurn3k/delivery-bottleneck-analyzer) shows where 2,893 Kubernetes pull requests wait, by team and stage, and is [cross-checked](https://github.com/gurn3k/delivery-bottleneck-analyzer/blob/main/docs/research/devstats-cross-check.md) against Kubernetes' own DevStats.
 
 ---
 
@@ -55,11 +55,11 @@ The rule I built it around: **code computes facts, the model judges meaning.** T
 
 **Where Kubernetes pull requests wait.** Kubernetes already publishes velocity charts. This answers the narrower question a program lead actually asks: right now, which team-and-stage queue holds the most waiting work, and is each open PR waiting on a reviewer, an approver, or its own author?
 
-The rule I built it around: **every number opens the pull requests behind it.** The report has 170 clickable numbers, and the unit of analysis is always a team and a stage, never a person.
+The rule I built it around: **every number opens the pull requests behind it.** The report has over 200 clickable numbers, and the unit of analysis is always a team and a stage, never a person.
 
-- **Snapshot of 2026-10-04:** 1,027 merged and 1,270 open PRs. The median PR waits 4.1 days for review, then merges in 1.7 hours once approved. The bottleneck is review, not the merge queue
-- **Finding:** 272 open PRs (21% of the backlog) have never had a human response, at a median wait of 41 days. Waiting on the author is about as common as waiting on a reviewer: 337 PRs against 368
-- **Cross-checked against Kubernetes' own DevStats:** the pattern is the same, the medians are within 16 to 28%, and the gap is explained
+- **Snapshot of 2026-11-21:** 1,526 merged and 1,367 open PRs. The median PR waits 2.9 days for review, then merges in 1.7 hours once approved. The bottleneck is review, not the merge queue
+- **Finding:** 295 open PRs (22% of the backlog) have never had a human response, at a median wait of 37 days. 641 open PRs (47%) wait on a reviewer or approver, against 383 waiting on their author
+- **Cross-checked against Kubernetes' own DevStats, twice:** the pattern is the same both times. The medians now differ more than on the first run, and the write-up says what is and isn't known about why
 - **An AI brief that can't make things up:** a small model writes the risks summary, and code rejects any bullet that cites a PR not in its input or a number not in the computed data. If no bullet passes, the report ships without a brief. Each call is capped at US$0.05
 - **Built from a spec, with 73 tests:** a PRD, 10 decision records, 8 tickets, and automated tests covering the metrics, the brief's fact checks, the GitHub fetcher (run against a recorded API response), and the public page itself, including a check that every count opens exactly that many pull requests
 - **Stack:** Node.js · GitHub API · OpenRouter · Vercel
