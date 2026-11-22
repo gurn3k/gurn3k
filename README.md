@@ -91,7 +91,7 @@ The rule I built it around: **every figure in the report comes from the run file
 - **Checked against my own labels:** 30 replies labelled blind agreed with the answer key on 116 of 120 labels. $6.26 spent judging, and 129 automated tests
 - **Stack:** vanilla JavaScript · Node.js · Anthropic API. No dependencies
 
-### <img src="assets/icons/understudy.svg" width="22" height="22" align="absmiddle" alt=""> Understudy · [Findings report ↗](https://understudy.gurn3k.com)
+### <img src="assets/icons/understudy.svg" width="22" height="22" align="absmiddle" alt=""> [Understudy](https://github.com/gurn3k/understudy) · [Findings report ↗](https://understudy.gurn3k.com)
 
 **Can an AI pass invoices straight to payment, and how would a company prove it first?** Companies keep asking where AI should take over work people do today, and the evidence is usually a demo. On a real company's 2018 purchasing records, I tested three approaches, two of them AI, on held-out invoices: the simple rule and the rulebook on 54,874, and Claude checking each invoice on a 10,000-invoice follow-up. I checked every call against what really happened.
 
